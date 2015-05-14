@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	.container
+		form.translate
+			.form-group
+				input.form-control(type="text", name="startLanguage", placeholder="Language to translate from")
+			.form-group
+				input.form-control(type="text", name="endLanguage", placeholder="Language to translate to")
+			.form-group
+				input.form-control(type="text", name="word", placeholder="word to translate")
+			.form-group
+				input.form-control(type="submit")
