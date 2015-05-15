@@ -2,6 +2,8 @@ extends layout
 
 block content
 	.container
+
+		h1.text-center translate anything from any language!
 		form.translate
 			.form-group
 				input.form-control(type="text", name="startLanguage", placeholder="Language to translate from")
@@ -10,4 +12,7 @@ block content
 			.form-group
 				input.form-control(type="text", name="word", placeholder="word to translate")
 			.form-group
-				input.form-control.btn-danger(type="submit")
+				input.form-control.btn-success(type="submit")
+		
+		button.refresh.btn.btn-danger.form-control New Word
+		h2.text-center

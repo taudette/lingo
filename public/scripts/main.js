@@ -7,18 +7,17 @@ $(document).on('ready', function(){
 			end: $('[name="endLanguage"]').val(),
 			word: $('[name="word"]').val()
 		};
-	
+		
 		console.log(findWord);
-
+		//dataFromServer represents the content of the page requested
 		$.get('/translate', findWord, function(dataFromServer){
 			console.log('data: ' + dataFromServer);
-			$('body').append(dataFromServer);
+			$('h2').append(dataFromServer);
 		});
-
-
+		$('.translate')[0].reset();
 	});
-
-	
-
+	$('.refresh').on('click', function(){
+		location.reload();
+	});
 
 });

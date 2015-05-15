@@ -41,9 +41,9 @@ var indexController = {
   				}
 	  		}
 
-	  		for (var i = 0; i <results.length; i++){
-  				if (endData === results[i].from.name){
-  					endCode = results[i].from.code;
+	  		for (var j = 0; j < results.length; j++){
+  				if (endData === results[j].from.name){
+  					endCode = results[j].from.code;
   				}
 	  		}
 
