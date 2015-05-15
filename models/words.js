@@ -1,10 +1,9 @@
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 
-// Create a blueprint for the monsters
-var wordSchema = mongoose.Schema({
-  name: String,
+// // Create a blueprint for the monsters
+// var wordSchema = mongoose.Schema({
+//   name: String,
+// });
 
-});
-
-// Export the created model connection to our schema
-module.exports = mongoose.model('word', wordSchema);
+// // Export the created model connection to our schema
+// module.exports = mongoose.model('word', wordSchema);

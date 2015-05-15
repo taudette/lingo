@@ -1,6 +1,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var indexController = require('./controllers/index.js');
+var BeGlobal = require('node-beglobal');
+var beglobal = new BeGlobal.BeglobalAPI({
+  api_token: 'snoTTjI7Sj73jdfTiahHCw%3D%3D'
+});
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/lingo');
 
@@ -12,7 +16,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
 app.get('/translate', indexController.translate);
-app.post('/addWord', indexController.addWord);
+app.get('/viewTranslate', indexController.viewTranslate);
+
 
 
 var server = app.listen(3949, function() {
